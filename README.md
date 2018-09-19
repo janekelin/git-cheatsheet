@@ -49,3 +49,23 @@ git pull
 # 10. FETCH CHANGES
 git fetch
 git merge
+
+# 11. CHECK EXISTING BRANCHES
+git branch
+OR
+git branch -a
+
+# 11.1. CREATE A NEW BRANCH
+git branch <name>
+OR
+git checkout -b <name>
+
+# 11.2. SWITCH TO ANOTHER BRANCH
+git checkout <branch-name>
+
+# 11.3. RENAME A BRANCH
+git branch -m <old-name> <new-name>
+
+# 11.4. DELETE A BRANCH
+git branch -d <name>
+git branch -D <name>
