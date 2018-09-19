@@ -27,6 +27,8 @@ git log
 OR
 git log --oneline
 OR
+git log --oneline --decorate --graph
+OR
 git log <file-name>
 OR
 git log <since>..<until>
@@ -69,3 +71,11 @@ git branch -m <old-name> <new-name>
 # 11.4. DELETE A BRANCH
 git branch -d <name>
 git branch -D <name>
+  
+# 12. COMPARE BRANCHES
+git diff <branch1> <branch2>
+
+# 13. MERGE BRANCHES
+git merge <branch-to-merge-with>
+git merge <branch-to-merge-with> --no-ff
+git merge <branch-to-merge-with> -m "MESSAGE"
