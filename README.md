@@ -1,3 +1,7 @@
+# QUICK TIPS
+Pull before push
+Diff before merge
+
 # 1. CHECK GLOBAL SETTINGS
 git config --global --list 
 
@@ -29,6 +33,8 @@ git log --oneline
 OR
 git log --oneline --decorate --graph
 OR
+git log --oneline --decorate --graph --all
+OR
 git log <file-name>
 OR
 git log <since>..<until>
@@ -41,6 +47,7 @@ git clone <url>
 # 7. COORDINATE LOCAL AND REMOTE REPOS
 git remote add origin <url>
 git remote show origin
+git remote -v
   
 # 8. PUSH CHANGES
 git push -u origin master
@@ -79,3 +86,6 @@ git diff <branch1> <branch2>
 git merge <branch-to-merge-with>
 git merge <branch-to-merge-with> --no-ff
 git merge <branch-to-merge-with> -m "MESSAGE"
+
+# 14. REBASE
+git rebase <branch-to-rebase-to>
