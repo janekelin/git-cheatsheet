@@ -55,6 +55,9 @@ git push -u origin master
 # 9. PULL CHANGES
 git pull
 
+# 9.1. PULL WITH REBASE
+git pull --rebase origin <branch-to-pull--from>
+
 # 10. FETCH CHANGES
 git fetch
 git merge
@@ -89,3 +92,33 @@ git merge <branch-to-merge-with> -m "MESSAGE"
 
 # 14. REBASE
 git rebase <branch-to-rebase-to>
+  
+# 15. GENERATE SSH KEY
+ssh-keygen -t rsa -b 4096 -C "KEY NAME"
+
+# 15.1. AUTHENTICATE SSH KEY
+ssh -vT git@github.com
+ssh -T git@github.comyes
+
+# 15.2. ESTABLISH SSH-CONNECTION
+git remote set-url origin <ssh-link>
+
+# 15.3 RE-ESTABLISH HHTP-CONNECTION
+git remote set-url origin <http-link>
+
+# 16. FILE DELETION
+git rm <file-name>
+git rm --cached <file-name>
+git clean -fd
+
+# 17. FILE RENAMING
+git mv <old-file-name> <new-file-name>
+
+# 18. FILE RELOCATION
+git mv <old-file-name> <new-directory-name>
+
+# 19. UNSTAGING
+git reset HEAD <file-name>
+
+# 19.1. DISCARD CHANGES
+git checkout --<file-name>
