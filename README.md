@@ -1,6 +1,17 @@
-### QUICK TIPS
+### BEST PRACTICES
 + Pull before push
 + Diff before merge
++ Commit often
++ Commit complete work
++ Write descriptive commit messages
++ Branch extensively
++ Use feature branches
++ Do pull requests
++ Prefer rebase instead of merge commits
++ Version control is not a backup system
++ Don't commit config files
++ Don't create very large repos
++ Run *git clean -n* before *git clean -fd*
 
 ### 1. CHECK GLOBAL SETTINGS
 + git config --global --list 
@@ -113,3 +124,19 @@
 
 ### 19.1. DISCARD CHANGES
 + git checkout --*file-name*
+
+### 20. DEBUGGING: STRING SEARCH
++ git grep 'STRING'
++ git grep -n 'STRING'
+
+### 20.1. DEBUGGING: EXTRACT INFORMATION ABOUT A KNOWN BUG (AUTHOR AND COMMIT HASH)
++ git blame *file-name*
++ git show *commit-id*
+
+### 20.2. DEBUGGING: IDENTIFYING THE SOURCE COMMITE OF THE BUG
++ git bisect start
++ git bisect good *last-known-good-commit*
++ git bisect bad *last-known-bad-commit*
++ git bisect good
++ git bisect bad
++ git bisect reset
