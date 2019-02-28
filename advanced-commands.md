@@ -6,7 +6,7 @@
 
 ### CHECK FILE SETTINGS
 + git config --file --list 
-OR
++ OR
 + git config --f --list 
 
 ### UNSET SETTINGS
