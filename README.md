@@ -13,55 +13,6 @@
 + Don't create very large repos
 + Run *git clean -n* before *git clean -fd*
 
-### 1. CHECK GLOBAL SETTINGS
-+ git config --global --list 
-
-### 1.1. INITIALIZE AUTHOR'S NAME AND ADDRESS IF NOT SPECIFIED
-+ git config --global user.name "NAME"
-+ git config --global user.email "EMAIL"
-
-### 1.2. CHECK CHANGES IN GLOBAL SETTINGS
-+ git config --global --list
-
-### 2. INITIALIZE A REPO
-+ git init
-
-### 3. ADD FILES TO THE REPO
-+ git add .
-
-### 4. COMMIT THE REPO
-+ git commit -m "COMMIT MESSAGE"
-+ git commit -am "COMMIT MESSAGE"
-
-### 5. CHECK REPO'S STATUS
-+ git status
-
-### 5.1. CHECK COMMIT LOGS
-+ git log
-+ git log --oneline
-+ git log --oneline --decorate --graph
-+ git log --oneline --decorate --graph --all
-+ git log *file-name*
-+ git log *since*..*until*
-+ git log -n *limit*
-  
-### 6. CLONE A REPO
-+ git clone *url*
-
-### 7. COORDINATE LOCAL AND REMOTE REPOS
-+ git remote add origin *url*
-+ git remote show origin
-+ git remote -v
-  
-### 8. PUSH CHANGES
-+ git push -u origin master
-
-### 9. PULL CHANGES
-+ git pull
-
-### 9.1. PULL WITH REBASE
-+ git pull --rebase origin *branch-to-pull--from*
-
 ### 10. FETCH CHANGES
 + git fetch
 + git merge
@@ -95,18 +46,6 @@
 ### 14. REBASE
 + git rebase *branch-to-rebase-to*
   
-### 15. GENERATE SSH KEY
-+ ssh-keygen -t rsa -b 4096 -C "KEY NAME"
-
-### 15.1. AUTHENTICATE SSH KEY
-+ ssh -vT git@github.com
-+ ssh -T git@github.comyes
-
-### 15.2. ESTABLISH SSH-CONNECTION
-+ git remote set-url origin *ssh-link*
-
-### 15.3 RE-ESTABLISH HHTP-CONNECTION
-+ git remote set-url origin *http-link*
 
 ### 16. FILE DELETION
 + git rm *file-name*
