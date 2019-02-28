@@ -17,32 +17,6 @@
 + git fetch
 + git merge
 
-### 11. CHECK EXISTING BRANCHES
-+ git branch
-+ git branch -a
-
-### 11.1. CREATE A NEW BRANCH
-+ git branch *name*
-+ git checkout -b *name*
-
-### 11.2. SWITCH TO ANOTHER BRANCH
-+ git checkout *branch-name*
-
-### 11.3. RENAME A BRANCH
-+ git branch -m *old-name* *new-name*
-
-### 11.4. DELETE A BRANCH
-+ git branch -d *name*
-+ git branch -D *name*
-  
-### 12. COMPARE BRANCHES
-+ git diff *branch1* *branch2*
-
-### 13. MERGE BRANCHES
-+ git merge *branch-to-merge-with*
-+ git merge *branch-to-merge-with* --no-ff
-+ git merge *branch-to-merge-with* -m "MESSAGE"
-
 ### 14. REBASE
 + git rebase *branch-to-rebase-to*
   
