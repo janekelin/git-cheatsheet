@@ -13,7 +13,6 @@
 
 ### 2.1. AUTHENTICATE SSH KEY
 + ssh -vT git@github.com
-+ OR
 + ssh -T git@github.com
 
 ### 2.2. ESTABLISH SSH-CONNECTION
@@ -27,7 +26,6 @@
 
 ### 4. ADD FILES TO THE REPO
 + git add .
-+ OR
 + git add _FILE-NAME_
 
 ### 5. COMMIT THE REPO
@@ -36,6 +34,8 @@
 
 ### 6. CHECK REPO'S STATUS
 + git status
++ git status -s
++ git status --short
 
 ### 6.1. CHECK COMMIT LOGS
 + git log
@@ -62,3 +62,30 @@
 
 ### 10.1. PULL WITH REBASE
 + git pull --rebase origin _BRANCH-TO-PULL-FROM_
+
+### 11. CHECK EXISTING BRANCHES
++ git branch
++ git branch -a
+
+### 11.1. CREATE A NEW BRANCH
++ git branch _NAME_
++ git checkout -b _NAME_
+
+### 11.2. SWITCH TO ANOTHER BRANCH
++ git checkout _BRANCH-NAME_
+
+### 11.3. RENAME A BRANCH
++ git branch -m _OLD-NAME_ _NEW-NAME_
+
+### 11.4. DELETE A BRANCH
++ git branch -d _NAME_
++ git branch -D _NAME_
+  
+### 12. COMPARE BRANCHES
++ git diff _BRANCH1_ _BRANCH2_
+
+### 13. MERGE BRANCHES
++ git merge _BRANCH-TO-MERGE-WITH_
++ git merge _BRANCH-TO-MERGE-WITH_ --no-ff
++ git merge _BRANCH-TO-MERGE-WITH_ -m "MESSAGE"
+
