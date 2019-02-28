@@ -13,7 +13,7 @@
 
 ### 2.1. AUTHENTICATE SSH KEY
 + ssh -vT git@github.com
-OR
++ OR
 + ssh -T git@github.com
 
 ### 2.2. ESTABLISH SSH-CONNECTION
@@ -27,7 +27,7 @@ OR
 
 ### 4. ADD FILES TO THE REPO
 + git add .
-OR
++ OR
 + git add _FILE-NAME_
 
 ### 5. COMMIT THE REPO
